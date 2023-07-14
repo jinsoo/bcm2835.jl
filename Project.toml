@@ -2,3 +2,6 @@ name = "bcm2835"
 uuid = "85392308-e294-44a5-bfe4-50539ce107a9"
 authors = ["jinsoo kim virtalf@gmail.com"]
 version = "0.1.0"
+
+[deps]
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
