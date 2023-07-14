@@ -1,8 +1,8 @@
 module bcm2835
 
   using Libdl
-
-  lib = dlopen("./src/libbcm2835_1.73.so")
+  push!(DL_LOAD_PATH, "/"*relpath((@__FILE__)*"/..","/"))
+  lib = dlopen("libbcm2835_1.73.so")
 
   bcm2835_init = dlsym(lib, "bcm2835_init")
   bcm2835_close = dlsym(lib, "bcm2835_close")
